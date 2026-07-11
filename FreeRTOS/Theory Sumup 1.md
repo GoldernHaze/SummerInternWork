@@ -127,24 +127,6 @@ Output (excerpt):
 
 ---
 
-## 8. Reference: Amrit's Parallel Progress (WSL)
-
-Teammate Amrit independently validated the same approach on WSL (Windows Subsystem for Linux), building a standalone **Task 1 (Payload Reader/Fragmenter)**:
-
-- Simulates payload data for multiple "occultation" events
-- Splits each event into fixed 32-byte chunks (placeholder size)
-- Each chunk carries: occultation ID, sequence number, total chunk count, data size
-- Pushes chunks into a FreeRTOS queue, drained by a temporary test consumer task
-- Confirmed correct ordering and byte counts for 3 simulated occultation events (9 total chunks)
-
-Open questions raised to Lucas (pending answer):
-1. Are the chunk header fields (occultation ID, sequence number, total chunks, data size) sufficient, or is something missing?
-2. Is 32 bytes the correct chunk size, or should it be based on actual NGHam payload limits for this mission?
-3. Is starting on the POSIX simulator (before real MCU) the right approach? *(Lucas's original message implies yes.)*
-
----
-
-## 9. Next Steps (Not Yet Started)
 
 - [ ] Define shared `PayloadChunk_t` struct (`payload_chunk.h`) — **done, not yet integrated**
 - [ ] Implement **Task 1**: simulated payload memory + fragmentation logic, sending chunks to Queue 1

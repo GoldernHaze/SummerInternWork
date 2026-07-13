@@ -241,7 +241,7 @@ Week-1/
 | 1 | **PyNGHam Documentation & Repository** | 1 Week | **15 Jun – 22 Jun** | - Study PyNGHam documentation<br>- Explore GitHub repository<br>- Practical implementation<br>- Complete 3 implementation tasks | ✅ Completed |
 | 2 | **FreeRTOS Documentation** | 1 Week | **25 Jun – 2 Jul** | - Learn FreeRTOS fundamentals<br>- Understand task scheduling, queues, semaphores, and synchronization | ✅ Completed |
 | 3 | **TT&C Firmware Repository** | ~1 Week | **2 Jul – 10 Jul** | - Study Queue implementation examples<br>- Study NGHam implementation<br>- Analyze FreeRTOS task architecture<br>- Complete 3 implementation tasks | ✅ Completed |
-
+all task done till date
 ---
 
 # References

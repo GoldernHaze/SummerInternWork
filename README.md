@@ -88,9 +88,9 @@ After completing this task I understood:
 
 ```
 FreeRTOS/
-├── freertos-fundamentals.md
-├── task-scheduling.md
-└── queues-and-intertask-communication.md
+├── Lesson 1
+├── Lesson 2
+└── Lesson 3
 ```
 
 ---
@@ -207,9 +207,10 @@ The use of queues provides:
 
 ```
 FreeRTOS/
-├── packet-handling-flow.md
-├── fifo-queue-design.md
-└── ngham-task-architecture.md
+├── Lesson 1
+├── Lesson 2
+FreeRTOS practical/
+├── Task 1
 ```
 
 ---
@@ -217,21 +218,7 @@ FreeRTOS/
 # Repository Structure
 
 ```
-Week-1/
-│
-├── README.md
-│
-├── NGHam/
-│   ├── ngham-packet-explained.md
-│   └── ngham-spp-explained.md
-│
-└── FreeRTOS/
-    ├── freertos-fundamentals.md
-    ├── task-scheduling.md
-    ├── queues-and-intertask-communication.md
-    ├── packet-handling-flow.md
-    ├── fifo-queue-design.md
-    └── ngham-task-architecture.md
+updating soon
 ```
 ---
 # Learning Timeline

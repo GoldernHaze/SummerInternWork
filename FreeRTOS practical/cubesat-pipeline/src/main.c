@@ -7,6 +7,7 @@
 #include "ngham.h"
 
 QueueHandle_t xQueue1_RawChunks;
+
 QueueHandle_t xQueue2_OrderedChunks;
 
 typedef struct {

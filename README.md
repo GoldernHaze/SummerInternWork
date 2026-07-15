@@ -30,6 +30,7 @@ The goal of this task was to understand how telemetry data is transformed into a
 - Reed-Solomon Forward Error Correction (FEC)
 - Packet scrambling
 - NGHam Serial Port Protocol (SPP)
+- 
 
 ## Learning Outcomes
 

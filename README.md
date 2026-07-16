@@ -10,6 +10,7 @@ The work was divided into three tasks:
 2. Learning the fundamentals of FreeRTOS.
 3. Designing the packet handling pipeline using FreeRTOS tasks.
 
+
 .
 
 ---

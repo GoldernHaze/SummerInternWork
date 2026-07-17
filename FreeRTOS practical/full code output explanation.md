@@ -1,4 +1,4 @@
-Let's go through the actual terminal output, line by line, tying each printed line back to the exact code that produced it and explaining why it looks the way it does.
+
 
 ---
 
@@ -140,9 +140,3 @@ Same timeout logic, one stage further down the pipeline. Task 3's queue (Queue 2
 This isn't program output at all — it's the terminal showing that **you** pressed `Ctrl+C` to manually stop the program, since both Task 1, Task 2, and Task 3 are now sitting in infinite idle loops (`for(;;) vTaskDelay(...)`) and would otherwise run forever doing nothing, waiting for a program that will never send them more work.
 
 ---
-
-# THE ONE-SENTENCE SUMMARY FOR YOUR PRESENTATION
-
-> "Every single line in this output can be traced directly back to a specific `printf` in one of my three tasks — the interleaving you see (Task1 → Task2 → Task3 → Task1 → ...) isn't scripted, it's FreeRTOS's real scheduler naturally alternating between tasks every time one of them blocks on a delay or an empty queue, and every byte in the final packets is independently verifiable against the exact math in `ngham.h`."
-
-That's the full trace, top to bottom, matched to code. Want me to do the same treatment for the `task1.md`/`task2.md` outputs too, or are you set for the presentation now?

@@ -1,6 +1,4 @@
 
-Alright, full line-by-line, no skipping. I'll go through every block of code in order, and for each line explain both **what** it does and **why** it's written that way.
-
 ---
 
 # `src/main.c` — INCLUDES
@@ -362,5 +360,3 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) { ... }
 None of these are things *we* call directly — they're callbacks FreeRTOS itself invokes automatically if something goes wrong internally, **because we explicitly turned on the corresponding checks in `FreeRTOSConfig.h`** (`configASSERT`, `configUSE_MALLOC_FAILED_HOOK`, `configCHECK_FOR_STACK_OVERFLOW`). Since we enabled those checks, the linker *requires* these functions to exist somewhere, or the program won't even build — that's exactly the error we hit and fixed earlier in this project. They never actually fired during our real test runs (proof our stack sizes and memory usage were sufficient), but they exist as a safety net.
 
 ---
-
-That's the complete file. Want me to go through **`ngham.h`** with this same level of granularity next, or do you feel solid enough on that part from the earlier explanation?
